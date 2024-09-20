@@ -12,3 +12,4 @@ C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\
 C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\Tugas.pdb
 C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\Tugas.genruntimeconfig.cache
 C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\ref\Tugas.dll
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\Tugas.sourcelink.json

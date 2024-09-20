@@ -1,6 +1,25 @@
 ﻿class Program{
     static void Main(string[] args)
     {
+        // Soal  1
+        Gajah gajah = new Gajah();
+        Ular ular = new Ular();
+        Console.WriteLine(gajah.Suara());
+        Console.WriteLine(ular.Suara());
+
+        // Soal 2
+        Singa singa = new Singa();
+        singa.Mengaum();
+
+        // Soal 3
+        singa.InfoHewan();
+
+        // Soal 4
+        ular.Merayap();
+
+        // Soal 5
+        Reptil reptil = new Buaya();
+        Console.WriteLine(reptil.Suara());;
     }
 }
 
