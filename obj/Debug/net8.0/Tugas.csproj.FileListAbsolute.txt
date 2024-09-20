@@ -1,0 +1,14 @@
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\bin\Debug\net8.0\Tugas.exe
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\bin\Debug\net8.0\Tugas.deps.json
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\bin\Debug\net8.0\Tugas.runtimeconfig.json
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\bin\Debug\net8.0\Tugas.dll
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\bin\Debug\net8.0\Tugas.pdb
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\Tugas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\Tugas.AssemblyInfoInputs.cache
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\Tugas.AssemblyInfo.cs
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\Tugas.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\Tugas.dll
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\refint\Tugas.dll
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\Tugas.pdb
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\Tugas.genruntimeconfig.cache
+C:\Users\ACER\Documents\VSCODE\Belajar C#\Matkul\PR\PR_3\Tugas\obj\Debug\net8.0\ref\Tugas.dll
