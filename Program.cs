@@ -1,14 +1,26 @@
 ﻿class Program{
     static void Main(string[] args)
     {
-        // Soal  1
+        Kebun_Binatang kebun_Binatang = new Kebun_Binatang();
+        Singa singa = new Singa();
         Gajah gajah = new Gajah();
         Ular ular = new Ular();
+        Buaya buaya = new Buaya();
+        kebun_Binatang.TambahHewan("Buaya");
+        kebun_Binatang.TambahHewan("Singa");
+        kebun_Binatang.TambahHewan("Ular");
+        kebun_Binatang.TambahHewan("Gajah");
+        kebun_Binatang.DaftarHewan();
+        Console.WriteLine(singa.Suara());
+        Console.WriteLine(gajah.Suara());
+        Console.WriteLine(ular.Suara());
+        Console.WriteLine(buaya.Suara());
+        singa.Mengaum();
+        // Soal  1
         Console.WriteLine(gajah.Suara());
         Console.WriteLine(ular.Suara());
 
         // Soal 2
-        Singa singa = new Singa();
         singa.Mengaum();
 
         // Soal 3
@@ -23,7 +35,7 @@
     }
 }
 
-class Kebung_Binatang{
+class Kebun_Binatang{
     List<string> KoleksiHewan = new List<string>();
 
     public void TambahHewan(string Hewan){
