@@ -2,10 +2,10 @@
     static void Main(string[] args)
     {
         Kebun_Binatang kebun_Binatang = new Kebun_Binatang();
-        Singa singa = new Singa();
-        Gajah gajah = new Gajah();
-        Ular ular = new Ular();
-        Buaya buaya = new Buaya();
+        Singa singa = new Singa(4,10);
+        Gajah gajah = new Gajah(4,5);
+        Ular ular = new Ular(0,2);
+        Buaya buaya = new Buaya(4,6);
         kebun_Binatang.TambahHewan("Buaya");
         kebun_Binatang.TambahHewan("Singa");
         kebun_Binatang.TambahHewan("Ular");
@@ -24,13 +24,13 @@
         singa.Mengaum();
 
         // Soal 3
-        singa.InfoHewan();
+        Console.WriteLine(singa.InfoHewan());;
 
         // Soal 4
         ular.Merayap();
 
         // Soal 5
-        Reptil reptil = new Buaya();
+        Reptil reptil = new Buaya(4,8);
         Console.WriteLine(reptil.Suara());;
     }
 }
@@ -50,8 +50,13 @@ class Kebun_Binatang{
 }
 
 class Hewan{
-    string name;
-    int umur;
+    internal string name;
+    internal int umur;
+
+    public Hewan(string name,int umur){
+        this.name = name;
+        this.umur = umur;
+    }
 
     public virtual string Suara(){
         return "Hewan ini bersuara";
@@ -63,7 +68,10 @@ class Hewan{
 }
 
 class Mamalia : Hewan {
-    int jumlah_kaki;
+    public Mamalia(int jumlah_kaki,string name,int umur):base(name,umur){
+        this.jumlah_kaki = jumlah_kaki;
+    }
+    public int jumlah_kaki;
 
     public override string Suara()
     {
@@ -72,7 +80,10 @@ class Mamalia : Hewan {
 }
 
 class Reptil : Hewan{
-    double Panjang_Tubuh;
+    public Reptil(double Panjang_Tubuh,string name,int umur):base(name,umur){
+        this.Panjang_Tubuh = Panjang_Tubuh;
+    }
+    public double Panjang_Tubuh;
 
     public override string Suara()
     {
@@ -81,6 +92,9 @@ class Reptil : Hewan{
 }
 
 class Singa : Mamalia{
+    public Singa(int jumlah_kaki,int umur):base(jumlah_kaki,"Singa",umur){
+
+    }
     public override string Suara(){
         return "Singa ini bersuara";
     }
@@ -91,6 +105,10 @@ class Singa : Mamalia{
 }
 
 class Gajah : Mamalia{
+
+    public Gajah(int jumlah_kaki,int umur):base(jumlah_kaki,"Gajah",umur){
+
+    }
     public override string Suara(){
         return "Gajah ini bersuara";
     }
@@ -98,6 +116,7 @@ class Gajah : Mamalia{
 }
 
 class Ular : Reptil{
+    public Ular(int jumlah_kaki,int umur):base(jumlah_kaki,"Ular",umur){}
     public override string Suara(){
         return "Ular ini bersuara";
     }
@@ -108,6 +127,9 @@ class Ular : Reptil{
 }
 
 class Buaya : Reptil{
+    public Buaya(int jumlah_kaki,int umur):base(jumlah_kaki,"Buaya",umur){
+
+    }
     public override string Suara(){
         return "Buaya ini bersuara";
     }
