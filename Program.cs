@@ -1,7 +1,6 @@
 ﻿class Program{
     static void Main(string[] args)
     {
-        Kebung_Binatang ragunan = new();
     }
 }
 
