@@ -6,10 +6,10 @@
         Gajah gajah = new Gajah(4,5);
         Ular ular = new Ular(0,2);
         Buaya buaya = new Buaya(4,6);
-        kebun_Binatang.TambahHewan("Buaya");
-        kebun_Binatang.TambahHewan("Singa");
-        kebun_Binatang.TambahHewan("Ular");
-        kebun_Binatang.TambahHewan("Gajah");
+        kebun_Binatang.TambahHewan(singa);
+        kebun_Binatang.TambahHewan(gajah);
+        kebun_Binatang.TambahHewan(ular);
+        kebun_Binatang.TambahHewan(buaya);
         kebun_Binatang.DaftarHewan();
         Console.WriteLine(singa.Suara());
         Console.WriteLine(gajah.Suara());
@@ -36,15 +36,16 @@
 }
 
 class Kebun_Binatang{
-    List<string> KoleksiHewan = new List<string>();
+    List<Hewan> KoleksiHewan = new List<Hewan>();
 
-    public void TambahHewan(string Hewan){
+    public void TambahHewan(Hewan Hewan){
+        Hewan hewan = Hewan;
         this.KoleksiHewan.Add(Hewan);
     }
 
     public void DaftarHewan(){
-        foreach(string x in this.KoleksiHewan){
-            Console.WriteLine(x);
+        foreach(Hewan x in this.KoleksiHewan){
+            Console.WriteLine($"Nama Hewan : {x.name}\nUmur Hewan : {x.umur}");
         }
     }
 }
@@ -62,7 +63,7 @@ class Hewan{
         return "Hewan ini bersuara";
     }
 
-    public string InfoHewan(){
+    public virtual string InfoHewan(){
         return $"Nama Hewa : {this.name}\nUmur Hewan : {this.umur}";
     }
 }
@@ -101,6 +102,11 @@ class Singa : Mamalia{
 
     public void Mengaum(){
         Console.WriteLine("Singa ini mengaum");
+    }
+
+    public override string InfoHewan()
+    {
+        return $"{base.InfoHewan()}\nJumlah Kaki : {this.jumlah_kaki}";
     }
 }
 
